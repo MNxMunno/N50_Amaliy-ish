@@ -82,9 +82,10 @@ header nav .nav-items a {
   text-align: left;
   color: #161c24;
   transition: 0.4s;
+  font-weight: 400;
 }
 header nav .nav-items a:hover {
-  color: #000;
+  color: #b1b0b0;
 }
 header nav .nav-items select {
   cursor: pointer;
@@ -97,6 +98,10 @@ header nav .nav-items select {
   text-align: left;
   color: #161c24;
   outline: none;
+  transition: 0.4s;
+}
+header nav .nav-items select:hover {
+  color: #75787c;
 }
 header nav .nav-btns {
   display: flex;
