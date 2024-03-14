@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top {
+  padding: 15px;
+  background: #454f5b;
+  .toop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    .top-text {
+      margin: auto;
+      p {
+        max-width: 550px;
+        color: #fff;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.12em;
+        text-align: left;
+      }
+      .two-text{
+        display: none;
+      }
+    }
+    .top-link {
+      a {
+        width: 160px;
+        display: block;
+        font-family: sans-serif;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0.12em;
+        text-align: left;
+      }
+    }
+  }
+}
+body {
+  overflow: hidden;
+}
+
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #c4cdd5;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    .nav-items {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      a {
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #161c24;
+        transition: 0.4s;
+        &:hover {
+          color: #000;
+        }
+      }
+      select {
+        cursor: pointer;
+        border: 0;
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #161c24;
+        outline: none;
+      }
+    }
+    .nav-btns {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      .btn-link {
+        display: flex;
+        align-items: end;
+        gap: 12px;
+        a {
+          text-decoration: none;
+          font-family: sans-serif;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #454f5b;
+        }
+      }
+      button {
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+      }
+      .burger {
+        display: none;
+        .burger {
+          position: relative;
+          width: 40px;
+          height: 30px;
+          background: transparent;
+          cursor: pointer;
+          display: block;
+        }
+
+        .burger input {
+          display: none;
+        }
+
+        .burger span {
+          display: block;
+          position: absolute;
+          height: 4px;
+          width: 100%;
+          background: black;
+          border-radius: 9px;
+          opacity: 1;
+          left: 0;
+          transform: rotate(0deg);
+          transition: 0.25s ease-in-out;
+        }
+
+        .burger span:nth-of-type(1) {
+          top: 0px;
+          transform-origin: left center;
+        }
+
+        .burger span:nth-of-type(2) {
+          top: 50%;
+          transform: translateY(-50%);
+          transform-origin: left center;
+        }
+
+        .burger span:nth-of-type(3) {
+          top: 100%;
+          transform-origin: left center;
+          transform: translateY(-100%);
+        }
+
+        .burger input:checked ~ span:nth-of-type(1) {
+          transform: rotate(45deg);
+          top: 0px;
+          left: 5px;
+        }
+
+        .burger input:checked ~ span:nth-of-type(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        .burger input:checked ~ span:nth-of-type(3) {
+          transform: rotate(-45deg);
+          top: 28px;
+          left: 5px;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 960px) {
+    nav {
+      .nav-items {
+        width: 300px;
+        position: fixed;
+        top: 120px;
+        right: -300px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        background: #fff;
+        padding: 25px;
+        transition: 0.4s;
+        z-index: 100;
+        box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
+      }
+      .nav-items.show {
+        right: 0;
+      }
+      .nav-btns {
+        .btn-link {
+          display: none;
+        }
+        .burger {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .top {
+    .toop {
+      .top-text {
+        .one-text {
+          display: none;
+        }
+        .two-text {
+          display: block;
+        }
+      }
+    }
+  }
+}
