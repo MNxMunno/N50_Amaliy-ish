@@ -30,7 +30,7 @@
         letter-spacing: 0.12em;
         text-align: left;
       }
-      .two-text{
+      .two-text {
         display: none;
       }
     }
@@ -121,6 +121,14 @@ header {
         cursor: pointer;
         background: transparent;
         border: 0;
+      }
+      .btn-like {
+        .like {
+          fill: #454f5b;
+        }
+        .like.red {
+          fill: red;
+        }
       }
       .burger {
         display: none;

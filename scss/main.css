@@ -123,6 +123,12 @@ header nav .nav-btns button {
   background: transparent;
   border: 0;
 }
+header nav .nav-btns .btn-like .like {
+  fill: #454f5b;
+}
+header nav .nav-btns .btn-like .like.red {
+  fill: red;
+}
 header nav .nav-btns .burger {
   display: none;
 }
