@@ -563,6 +563,9 @@ footer .foot-bottom p {
   padding-top: 24px;
 }
 
+.dark .nav-items.show {
+  background: #bbb;
+}
 .dark header {
   background: #9d9d9d;
 }

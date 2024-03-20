@@ -620,6 +620,9 @@ footer {
 }
 
 .dark {
+  .nav-items.show {
+    background: #bbb;
+  }
   header {
     background: #9d9d9d;
     nav {
