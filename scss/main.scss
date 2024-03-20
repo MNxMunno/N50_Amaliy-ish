@@ -538,3 +538,59 @@ main {
     }
   }
 }
+
+footer {
+  padding: 64px 0;
+  background: #0d2436;
+  .cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+    .card {
+      .Logo {
+        padding-bottom: 140px;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      h3 {
+        //styleName: medium 18 \ 28;
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: left;
+        color: #fff;
+        padding-bottom: 52px;
+      }
+      .link {
+        max-width: 150px;
+        //styleName: 16/light 16 \ 26;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+        text-align: left;
+        color: #fff;
+        display: block;
+      }
+      .link + .links {
+        padding-top: 16px;
+      }
+      p {
+        //styleName: 14/light 14 \ 24;
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+        color: #c4cdd5;
+        padding: 5px 0;
+      }
+    }
+  }
+}

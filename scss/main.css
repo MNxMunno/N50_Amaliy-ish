@@ -484,4 +484,55 @@ main .contact .content form button:hover {
   main .contact .content h1 {
     font-size: 24px;
   }
+}
+
+footer {
+  padding: 64px 0;
+  background: #0d2436;
+}
+footer .cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+footer .cards .card .Logo {
+  padding-bottom: 140px;
+}
+footer .cards .card .links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .cards .card h3 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+  padding-bottom: 52px;
+}
+footer .cards .card .link {
+  max-width: 150px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+  display: block;
+}
+footer .cards .card .link + .links {
+  padding-top: 16px;
+}
+footer .cards .card p {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #c4cdd5;
+  padding: 5px 0;
 }/*# sourceMappingURL=main.css.map */
