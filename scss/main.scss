@@ -10,8 +10,8 @@ a {
   text-decoration: none;
 }
 
-body.dark {
-  background: #000;
+body {
+  transition: 0.5s;
 }
 
 .container {
@@ -203,6 +203,9 @@ header {
           top: 28px;
           left: 5px;
         }
+      }
+      .cart2 {
+        display: none;
       }
     }
   }
@@ -592,6 +595,128 @@ footer {
         text-align: left;
         color: #c4cdd5;
         padding: 5px 0;
+      }
+    }
+  }
+  .foot-bottom {
+    padding-top: 50px;
+    .line {
+      background: #ffffff;
+      height: 1px;
+      opacity: 0.3;
+      max-width: 100%;
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.71px;
+      text-align: center;
+      color: #fff;
+      opacity: 0.3;
+      padding-top: 24px;
+    }
+  }
+}
+
+.dark {
+  header {
+    background: #9d9d9d;
+    nav {
+      .nav-items {
+        a {
+          color: #fff;
+        }
+        select {
+          background: #9d9d9d;
+          color: #fff;
+        }
+      }
+      .nav-btns {
+        .btn-link {
+          a {
+            color: #fff;
+          }
+        }
+        .cart1 {
+          display: none;
+        }
+        .cart2 {
+          width: 36px;
+          display: block;
+        }
+      }
+    }
+  }
+  main {
+    background: #666;
+    .product {
+      .content {
+        a {
+          color: #fff;
+        }
+        h1 {
+          color: #fff;
+          p {
+            color: #fff;
+          }
+        }
+        .cards {
+          .card {
+            background: #ccc;
+            h4 {
+              color: #090a08;
+            }
+            p {
+              color: #db4141 !important;
+            }
+          }
+        }
+      }
+    }
+    .info {
+      .cards {
+        .card {
+          h3 {
+            color: #fff;
+          }
+          p {
+            color: #fff;
+          }
+          .checked {
+            .check {
+              .text {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .contact {
+      background: #9db4c9;
+      .content {
+        h1 {
+          color: #fff;
+        }
+        p {
+          color: #fff;
+        }
+        form {
+          input {
+            background: #ccc;
+            color: #ddd;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background: rgb(7, 68, 128);
+    .foot-bottom {
+      p {
+        color: #fff;
+        opacity: 0.8;
       }
     }
   }

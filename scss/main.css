@@ -12,8 +12,8 @@ a {
   text-decoration: none;
 }
 
-body.dark {
-  background: #000;
+body {
+  transition: 0.5s;
 }
 
 .container {
@@ -196,6 +196,9 @@ header nav .nav-btns .burger .burger input:checked ~ span:nth-of-type(3) {
   transform: rotate(-45deg);
   top: 28px;
   left: 5px;
+}
+header nav .nav-btns .cart2 {
+  display: none;
 }
 @media only screen and (max-width: 960px) {
   header nav .nav-items {
@@ -539,4 +542,94 @@ footer .cards .card p {
   text-align: left;
   color: #c4cdd5;
   padding: 5px 0;
+}
+footer .foot-bottom {
+  padding-top: 50px;
+}
+footer .foot-bottom .line {
+  background: #ffffff;
+  height: 1px;
+  opacity: 0.3;
+  max-width: 100%;
+}
+footer .foot-bottom p {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  text-align: center;
+  color: #fff;
+  opacity: 0.3;
+  padding-top: 24px;
+}
+
+.dark header {
+  background: #9d9d9d;
+}
+.dark header nav .nav-items a {
+  color: #fff;
+}
+.dark header nav .nav-items select {
+  background: #9d9d9d;
+  color: #fff;
+}
+.dark header nav .nav-btns .btn-link a {
+  color: #fff;
+}
+.dark header nav .nav-btns .cart1 {
+  display: none;
+}
+.dark header nav .nav-btns .cart2 {
+  width: 36px;
+  display: block;
+}
+.dark main {
+  background: #666;
+}
+.dark main .product .content a {
+  color: #fff;
+}
+.dark main .product .content h1 {
+  color: #fff;
+}
+.dark main .product .content h1 p {
+  color: #fff;
+}
+.dark main .product .content .cards .card {
+  background: #ccc;
+}
+.dark main .product .content .cards .card h4 {
+  color: #090a08;
+}
+.dark main .product .content .cards .card p {
+  color: #db4141 !important;
+}
+.dark main .info .cards .card h3 {
+  color: #fff;
+}
+.dark main .info .cards .card p {
+  color: #fff;
+}
+.dark main .info .cards .card .checked .check .text {
+  color: #fff;
+}
+.dark main .contact {
+  background: #9db4c9;
+}
+.dark main .contact .content h1 {
+  color: #fff;
+}
+.dark main .contact .content p {
+  color: #fff;
+}
+.dark main .contact .content form input {
+  background: #ccc;
+  color: #ddd;
+}
+.dark footer {
+  background: rgb(7, 68, 128);
+}
+.dark footer .foot-bottom p {
+  color: #fff;
+  opacity: 0.8;
 }/*# sourceMappingURL=main.css.map */
