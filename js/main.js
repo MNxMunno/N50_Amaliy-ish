@@ -1,5 +1,7 @@
 const burger = document.querySelector(".burger");
 const items = document.querySelector(".nav-items");
+// const header = document.getElementsByTagName("header");
+
 burger.addEventListener("click", () => {
   items.classList.toggle("show");
   //   console.log(burger);

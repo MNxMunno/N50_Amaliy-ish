@@ -202,10 +202,10 @@ header {
   @media only screen and (max-width: 960px) {
     nav {
       .nav-items {
-        width: 300px;
+        width: 90%;
         position: fixed;
-        top: 120px;
-        right: -300px;
+        top: 86.5px;
+        left: -90%;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -216,7 +216,8 @@ header {
         box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.2);
       }
       .nav-items.show {
-        right: 0;
+        // top: 85px;
+        left: 0;
       }
       .nav-btns {
         .btn-link {
@@ -242,6 +243,11 @@ header {
         }
       }
     }
+  }
+}
+@media only screen and (max-width: 450px) {
+  .top {
+    display: none;
   }
 }
 

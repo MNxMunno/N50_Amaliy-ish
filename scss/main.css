@@ -187,10 +187,10 @@ header nav .nav-btns .burger .burger input:checked ~ span:nth-of-type(3) {
 }
 @media only screen and (max-width: 960px) {
   header nav .nav-items {
-    width: 300px;
+    width: 90%;
     position: fixed;
-    top: 120px;
-    right: -300px;
+    top: 86.5px;
+    left: -90%;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -201,7 +201,7 @@ header nav .nav-btns .burger .burger input:checked ~ span:nth-of-type(3) {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   }
   header nav .nav-items.show {
-    right: 0;
+    left: 0;
   }
   header nav .nav-btns .btn-link {
     display: none;
@@ -217,6 +217,11 @@ header nav .nav-btns .burger .burger input:checked ~ span:nth-of-type(3) {
   }
   .top .toop .top-text .two-text {
     display: block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .top {
+    display: none;
   }
 }
 main .product {
