@@ -48,10 +48,6 @@
   text-align: left;
 }
 
-body {
-  overflow: hidden;
-}
-
 header {
   padding: 20px 0;
   border-bottom: 1px solid #c4cdd5;
@@ -60,6 +56,7 @@ header {
   left: 0;
   right: 0;
   background: #fff;
+  z-index: 100;
 }
 header nav {
   display: flex;
@@ -221,4 +218,97 @@ header nav .nav-btns .burger .burger input:checked ~ span:nth-of-type(3) {
   .top .toop .top-text .two-text {
     display: block;
   }
+}
+main .product {
+  padding-bottom: 120px;
+}
+main .product .content .cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+main .product .content .cards .card {
+  position: relative;
+  width: 280px;
+  border: 1px solid #e3e3e3;
+}
+main .product .content .cards .card button {
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
+main .product .content .cards .card img {
+  width: 100%;
+}
+main .product .content .cards .card .card-content {
+  padding: 10px;
+}
+main .product .content .cards .card .card-content h4 {
+  max-width: 300px;
+  text-align: start;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #454f5b;
+}
+main .product .content .cards .card .card-content .price {
+  text-align: start;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.87px;
+  text-align: left;
+  color: #161c24;
+  padding-bottom: 5px;
+}
+main .product .content .cards .card .card-content .price del {
+  color: #454f5b;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.48px;
+  text-align: left;
+  padding-left: 5px;
+}
+main .product .content .cards .card .card-content b {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  text-align: left;
+  color: #454f5b;
+}
+main .product .content .cards .card .card-content .sale {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  background: #fff;
+  padding: 5px 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  text-align: left;
+  color: #161c24;
+}
+main .product .content .cards .card .card-content .gift {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  z-index: 1;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  text-align: left;
+  color: #161c24;
 }/*# sourceMappingURL=main.css.map */
